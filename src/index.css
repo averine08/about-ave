@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html{
-    
+    color: #243A73 ;
     @media (max-width: 768px) {
         font-size: 14px;
     }
