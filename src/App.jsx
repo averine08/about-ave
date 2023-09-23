@@ -11,6 +11,12 @@ function App() {
     <div className="">
       <Navbar/>
       <Home/>
+      {
+        //slider pengalaman
+        // Im familiar with :  HTML, CSS, ...
+        // My projects
+      }
+
     </div>
     </>
   )

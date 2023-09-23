@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+
+}
 body{
     background-color: #F7F9FF;
 }
