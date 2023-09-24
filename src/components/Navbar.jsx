@@ -5,8 +5,8 @@ import {AiOutlineMenu, AiOutlineClose} from "react-icons/ai"
 const NavLinks = () =>{
     return(
         <>
-        <Link className="px-5  text-biru  cursor-pointer hover:font-bold  " to="home">Home</Link>
-        <Link className="px-5  text-biru  cursor-pointer active:font-bold underline" to="achievement">Achievement</Link>
+        <Link className="px-5  text-biru  cursor-pointer hover:font-bold  " to="Home">Home</Link>
+        <Link className="px-5  text-biru  cursor-pointer active:font-bold underline" to="/achievement">Achievement</Link>
         <Link className="px-5  text-biru  cursor-pointer active:font-bold underline" to="techstack">Techstack</Link>
         <Link className="px-5  text-ungu  cursor-pointer active:font-bold underline" to="project">Project</Link>
         </>
@@ -22,7 +22,7 @@ const Navbar = () => {
     }
     return(
         <>
-        <nav className="bg-putih fixed w-full h-16 px-8 py-5 mx-auto flex justify-between drop-shadow-md z-0">
+        <nav className="bg-putih fixed w-full h-16 px-8 py-5 mx-auto flex justify-between z-10"> 
             <img src="../src/assets/Logo.svg" alt="Logo" className="w-24 h-full max-[128]"/> 
             <div className="hidden md:flex">
                 <NavLinks className="flex flex-wrap"/>

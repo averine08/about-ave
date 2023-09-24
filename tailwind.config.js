@@ -30,7 +30,7 @@ export default {
         'biru': {
           light: '#A5BECC',
           light_50 : '#D1DEE5',
-          DEFAULT: '#243A73',
+          DEFAULT: '#001220',
         },
         'ungu': {
           DEFAULT: '#7C3E66',
@@ -38,16 +38,16 @@ export default {
         'putih': {
           DEFAULT: '#F7F9FF',
         },
-  
-  
-        // ...
       },
+      fontFamily:{
+        // 'sans' : ['Montserrat'],
+        'body' : ['Work Sans'],
+      },
+      backgroundImage: {
+        'hero-pattern': "url('./src/assets/wave3.svg')",
+        // 'footer-texture': "url('/img/footer-texture.png')",
+      }
     },
-    fontFamily:{
-      // 'sans' : ['Montserrat'],
-      'body' : ['Work Sans'],
-    },
-
   },
   plugins: [],
   safelist : [
