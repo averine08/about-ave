@@ -30,7 +30,8 @@ const Navbar = () => {
             <div className="flex items-center md:hidden " onClick={toggleNavbar}>
                     {isOpen ? <AiOutlineClose size={25} color="#243A73" className="flex z-10" /> : <AiOutlineMenu size={25} color="#243A73" className="flex z-10"/> }  
             </div>
-            <div className={isOpen? "fixed right-0 top-0 w-[40%] h-screen space-y-10 pt-10 flex flex-col z-3  bg-biru-light ease-in-out duration-500 drop-shadow-lg   md:hidden" : "fixed left-[-100%] ease-in-out duration-1000 md:hidden"}>
+            
+            <div className={isOpen? "fixed right-0 top-0 w-[50%] h-screen space-y-10 pt-20 flex flex-col z-3  bg-biru-light ease-in-out duration-500 drop-shadow-lg   md:hidden" : "fixed right-[-120%] flex flex-col top-0 h-screen space-y-10 ease-in-out duration-500 md:hidden"}>
                 <NavLinks
                 />
             </div>
