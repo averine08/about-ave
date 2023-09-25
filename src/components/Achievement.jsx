@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import CarouselItemIMG from './CarouselItemIMG';
+import CarouselItemIMG2 from './CarouselItemIMG2';
 
 const Achievement = () => {
 
@@ -83,7 +84,7 @@ const Achievement = () => {
     <div className='flex w-full h-fit py-16 px-4 '> {/**/}
       <div className='w-full h-fit flex items-center justify-center'>
         {achievements.map((achievement) => (
-          <CarouselItemIMG achievement={achievement}/>
+          <CarouselItemIMG2 achievement={achievement}/>
         ))}
     </div>
       </div>

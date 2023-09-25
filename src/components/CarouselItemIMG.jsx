@@ -27,13 +27,11 @@ const CarouselItemIMG = ({achievement}) => {
 
   return (
     <div className='w-[80%] rounded-md bg-biru-light_50 lg:p-20 sm:p-4 min-w-full '>
-        <div className=" flex bg-cover justify-center min-h-[400px] w-fit"  > {/* */}
-            <img key={index} src={image} alt={`Image ${index}`} className='sm:w-full md:w-[50%] h-full'/>
+        <div className=" flex bg-cover justify-center min-h-[400px] w-fit "  > {/* */}
+            <img key={index} src={image} alt={`Image ${index}`} className='sm:w-full md:w-[50%] h-full '/>
         </div>
 
-        <div className='w- absolute bottom-[50%] bg-cover'> 
-            <img src="../src/assets/tech-stack/python.png" alt="haaa" className='w-3'/>
-        </div>
+
         <h2>{achievement.title}</h2>
         <p>{achievement.year}</p>
         <p>{achievement.description}</p>
