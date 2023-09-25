@@ -23,7 +23,7 @@ const Navbar = () => {
     return(
         <>
         <nav className="bg-putih fixed w-full h-16 px-8 py-5 mx-auto flex justify-between z-10"> 
-            <img src="../public/Logo.svg" alt="Logo" className="w-24 h-full max-[128]"/> 
+            <img src="../Logo.svg" alt="Logo" className="w-24 h-full max-[128]"/> 
             <div className="hidden md:flex">
                 <NavLinks className="flex flex-wrap"/>
             </div>
