@@ -83,14 +83,14 @@ const Achievement = () => {
   // console.log(achivements.image[2]);
   return (
     <>
-    <div className=' w-full h-fit py-16 px-4 '> {/**/}
+    <div name="achievement" className=' flex w-full h-fit py-16 px-4 items-center flex-col'> {/**/}
     <h1 className='text-2xl font-bold border-x-4 border-x-ungu p-1 px-4 mb-10 text-biru'>Experiences</h1>
-      <div className='w-full h-fit sm:inline-flex sm:space-x-2 sm:p-4 lg:block lg:space-x-0 lg:space-y-5  sm:overflow-scroll lg:overflow-clip'>
+      <div className='w-full h-fit sm:inline-flex sm:space-x-2 sm:p-4 lg:block lg:space-x-0 lg:space-y-5  sm:overflow-x-scroll sm:snap-mandatory sm:snap-x lg:overflow-visible sm:self-center '>
         {achievements.map((achievement, index) => (
-          <CarouselItemIMG2 achievement={achievement} key={index}/>
+          <CarouselItemIMG2 achievement={achievement} key={index} />
         ))}
-    </div>
       </div>
+    </div>
 
       </>
   )

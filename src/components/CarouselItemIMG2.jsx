@@ -12,7 +12,7 @@ const CarouselItemIMG2 = ({achievement}) => {
         achievement.images[3],
     ];
     
-    console.log(CollImages[0]);
+    // console.log(CollImages[0]);
     // const Image = [achievement.images[0],achievement.images[1],achievement.images[2],achievement.images[3]]
     // const [activeIndex, se]
     const [currentIndex, setCurrentIndex] = useState(0)
@@ -33,14 +33,15 @@ const CarouselItemIMG2 = ({achievement}) => {
     };
 
   return (
-    <div className=' lg:min-h-[500px] lg:max-h-[900px] rounded-md bg-biru-light_50 lg:p-18 sm:py-10 min-w-full flex flex-col items-center sm:min-h-[300px] sm:h-[500px] sm:w-[300px]'>
-      <div className='flex justify-center items-center w-full h-fit group md:min-h-[80%] sm:min-h-fit'>
+    
+    <div className=' lg:min-h-[500px] lg:max-h-[900px] rounded-md bg-biru-light_50 mx-auto sm:py-10 min-w-[90%] flex flex-col items-center self-center sm:min-h-[300px] sm:h-[500px] sm:w-[300px]'> {/* jadi da rata  pas min-w diganti jadi 90% taidnya 100*/}
+      <div className='flex justify-center items-center w-full h-fit group md:min-h-[80%] sm:min-h-fit sm:snap-center '>
           <div className=' cursor-pointer opacity-25 group-hover:opacity-100 duration-200' onClick={prevSlide}>
             {/*className=' absolute top-[50%]  -translate-x-[-100%] translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer' */}
             <box-icon name="chevron-left-square" type="solid" color="#001220" ></box-icon>
           </div>
           <div style={{ backgroundImage: `url(${CollImages[currentIndex]})`}}
-                className=" sm:w-[80%] bg-cover bg-center duration-500 lg:w-[50%] sm:h-52 lg:h-[100%] rounded-md "  
+                className=" sm:w-[80%] bg-cover bg-center duration-500 lg:w-[50%] sm:h-52 lg:h-[90%] rounded-md "  
               
               
               > {/*  min-h-[400px]*/}
