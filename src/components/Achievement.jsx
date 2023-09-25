@@ -27,7 +27,7 @@ const Achievement = () => {
     {
       title : 'BNCC',
       year : '2021-2023',
-      description : 'So fun so fresh',
+      description : 'So fun so fresh Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, porro. ' ,
       images : [
         '../src/assets/slide-show/1_1.jpg',
         '../src/assets/slide-show/1_2.jpg',
@@ -35,26 +35,26 @@ const Achievement = () => {
         '../src/assets/slide-show/1_4.jpg',
       ]
     },
-    // {
-    //   title : 'Binus FYP',
-    //   year : '2022',
-    //   description : 'Same so fun',
-    //   images : [
-    //     '../src/assets/slide-show/1_1.jpg',
-    //     '../src/assets/slide-show/1_2.jpg',
-    //     '../src/assets/slide-show/1_3.jpg',
-    //   ]
-    // },
-    // {
-    //   title : 'Team Promotion',
-    //   year : '2021-now',
-    //   decription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident harum commodi, doloribus obcaecati molestias ipsum recusandae iure consequuntur nam eveniet porro temporibus animi minima quas ad aperiam quo adipisci?',
-    //   images : [
-    //     '../src/assets/slide-show/1_1.jpg',
-    //     '../src/assets/slide-show/1_2.jpg',
-    //     '../src/assets/slide-show/1_3.jpg',
-    //   ]
-    // }
+    {
+      title : 'Binus FYP',
+      year : '2022',
+      description : 'Same so fun',
+      images : [
+        '../src/assets/slide-show/1_1.jpg',
+        '../src/assets/slide-show/1_2.jpg',
+        '../src/assets/slide-show/1_3.jpg',
+      ]
+    },
+    {
+      title : 'Team Promotion',
+      year : '2021-now',
+      description: 'tesss',
+      images : [
+        '../src/assets/slide-show/1_1.jpg',
+        '../src/assets/slide-show/1_2.jpg',
+        '../src/assets/slide-show/1_3.jpg',
+      ]
+    }
   ];
 
   // const images_1 = [
@@ -81,10 +81,11 @@ const Achievement = () => {
   // console.log(achivements.image[2]);
   return (
     <>
-    <div className='flex w-full h-fit py-16 px-4 '> {/**/}
-      <div className='w-full h-fit flex items-center justify-center'>
-        {achievements.map((achievement) => (
-          <CarouselItemIMG2 achievement={achievement}/>
+    <div className=' w-full h-fit py-16 px-4 '> {/**/}
+    <h1 className='text-2xl font-bold border-x-4 border-x-ungu p-1 px-4 mb-10 text-biru'>Experiences</h1>
+      <div className='w-full h-fit sm:inline-flex sm:space-x-2 sm:p-4 lg:block lg:space-x-0 lg:space-y-5  sm:overflow-scroll lg:overflow-clip'>
+        {achievements.map((achievement, index) => (
+          <CarouselItemIMG2 achievement={achievement} key={index}/>
         ))}
     </div>
       </div>

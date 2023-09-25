@@ -3,8 +3,8 @@ import React from 'react'
 const TechStack = () => {
   return (
     
-    <div className='flex w-full h-fit lg:p-20 sm:p-14 flex-col items-center'>
-        <h1 className='text-2xl font-bold border-x-4 border-x-ungu p-1 px-4 mb-10 lg'>Language & Tools I have used</h1>
+    <div className='flex w-full h-fit lg:p-20 sm:p-4 flex-col items-center'>
+        <h1 className='text-2xl font-bold border-x-4 border-x-ungu p-1 px-4 mb-10 text-biru'>Language & Tools I have used</h1>
         <div className='flex flex-wrap justify-center p-6 md:w-[70%] sm:w-[90%] sm:p-4  bg-biru-light_50 items-center rounded-md'>
             <img src="../src/assets/tech-stack/c.png" alt="C" className='md:max-w-[80px] sm:max-w-[60px] h-fit p-2'/>
             <img src="../src/assets/tech-stack/java.png" alt="Java" className='md:max-w-[80px]  sm:max-w-[60px] h-fit p-2' />
