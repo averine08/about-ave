@@ -34,7 +34,7 @@ const CarouselItemIMG2 = ({achievement}) => {
 
   return (
     <div className=' lg:min-h-[500px] lg:max-h-[900px] rounded-md bg-biru-light_50 lg:p-18 sm:py-10 min-w-full flex flex-col items-center sm:min-h-[300px] sm:h-[500px] sm:w-[300px]'>
-      <div className='flex justify-center items-center w-full h-max group min-h-fit'>
+      <div className='flex justify-center items-center w-full h-fit group md:min-h-[80%] sm:min-h-fit'>
           <div className=' cursor-pointer opacity-25 group-hover:opacity-100 duration-200' onClick={prevSlide}>
             {/*className=' absolute top-[50%]  -translate-x-[-100%] translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer' */}
             <box-icon name="chevron-left-square" type="solid" color="#001220" ></box-icon>
@@ -51,9 +51,9 @@ const CarouselItemIMG2 = ({achievement}) => {
             <box-icon name="chevron-right-square" type="solid" size="sm" color="#001220"></box-icon>
           </div>
         </div>
-        <div className='sm:w-[80%] lg:w-[50%] py-10 bg-biru-light_50 font-normal'>
-          <h2 className='font-bold text-ungu'>{achievement.title}</h2>
-          <p className='text-ungu'>{achievement.year}</p>
+        <div className='sm:w-[80%] lg:w-[50%] p-1 bg-biru-light_50 font-normal'>
+          <h2>{achievement.title}</h2>
+          <p>{achievement.year}</p>
           <p>{achievement.description}</p>
 
         </div>
