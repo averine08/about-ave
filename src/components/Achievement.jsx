@@ -29,10 +29,10 @@ const Achievement = () => {
       year : '2021-2023',
       description : 'So fun so fresh Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, porro. ' ,
       images : [
-        '../src/assets/slide-show/1_1.jpg',
-        '../src/assets/slide-show/1_2.jpg',
-        '../src/assets/slide-show/1_3.jpg',
-        '../src/assets/slide-show/1_4.jpg',
+        '../slide-show/1_1.jpg',
+        '../slide-show/1_2.jpg',
+        '../slide-show/1_3.jpg',
+        '../slide-show/1_4.jpg',
       ]
     },
     {
@@ -40,9 +40,10 @@ const Achievement = () => {
       year : '2022',
       description : 'Same so fun',
       images : [
-        '../src/assets/slide-show/1_1.jpg',
-        '../src/assets/slide-show/1_2.jpg',
-        '../src/assets/slide-show/1_3.jpg',
+        '../slide-show/1_1.jpg',
+        '../slide-show/1_2.jpg',
+        '../slide-show/1_3.jpg',
+        '../slide-show/1_4.jpg',
       ]
     },
     {
@@ -50,9 +51,10 @@ const Achievement = () => {
       year : '2021-now',
       description: 'tesss',
       images : [
-        '../src/assets/slide-show/1_1.jpg',
-        '../src/assets/slide-show/1_2.jpg',
-        '../src/assets/slide-show/1_3.jpg',
+        '../slide-show/1_1.jpg',
+        '../slide-show/1_2.jpg',
+        '../slide-show/1_3.jpg',
+        '../slide-show/1_4.jpg',
       ]
     }
   ];
