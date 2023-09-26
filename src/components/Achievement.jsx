@@ -25,36 +25,47 @@ const Achievement = () => {
 
   const achievements = [
     {
-      title : 'BNCC',
-      year : '2021-2023',
-      description : 'So fun so fresh Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, porro. ' ,
+      title : 'BNCC (Bina Nusantara Computer Club)',
+      type : 'Organization',
+      description : 'Bergabung sebagai Aktivis, saya bertemu banyak tech enthusiast lainnnya. Disini saya belajar banyak mengenai cara kerja atau workflow sebuah organisasi dengan skala yang lebih besar, softskill, dan tentunya hardskill. Saya dipercaya untuk menjadi staff event dan juga MC pada beberapa event tahunan BNCC' ,
       images : [
-        '../slide-show/1_1.jpg',
-        '../slide-show/1_2.jpg',
-        '../slide-show/1_3.jpg',
-        '../slide-show/1_4.jpg',
+        '../slide-show/1_1.svg',
+        '../slide-show/1_2.svg',
+        '../slide-show/1_3.svg',
+        '../slide-show/1_4.svg',
       ]
     },
     {
-      title : 'Binus FYP',
-      year : '2022',
-      description : 'Same so fun',
+      title : 'Binus FYP (First Year Program) 2026',
+      type : 'Event',
+      description : 'Sebagai Freshmen Leader, saya sangat dilatih untuk adaptif terhadap kondisi yang tidak menentu. Selama 7 hari saya berkolaborasi bersama 4 Freshmen Leader lainnya untuk mendampingi 60+ Freshmen dalam kelas ABN02. ',
       images : [
-        '../slide-show/1_1.jpg',
-        '../slide-show/1_2.jpg',
-        '../slide-show/1_3.jpg',
-        '../slide-show/1_4.jpg',
+        '../slide-show/2_1.svg',
+        '../slide-show/2_2.svg',
+        '../slide-show/2_3.svg',
+        '../slide-show/2_4.svg',
+        
       ]
     },
     {
-      title : 'Team Promotion',
-      year : '2021-now',
-      description: 'tesss',
+      title : 'Team Promotion Binus University',
+      type : 'Part Time',
+      description: 'Saya bekerja di bagian Content Creator yang bertugas untuk mempromosikan Binus University melalui content Instagram dan Tiktok dengan target market lulusan SMA yang seda mencari universitas. Selain itu saya juga dipercaya untuk membuat video promosi kolaborasi Binus X Rencanamu',
       images : [
-        '../slide-show/1_1.jpg',
-        '../slide-show/1_2.jpg',
-        '../slide-show/1_3.jpg',
-        '../slide-show/1_4.jpg',
+        '../slide-show/3_1.svg',
+        '../slide-show/3_2.svg',
+
+      ]
+    },
+    {
+      title : 'OSIS/PPSK SMA XAVERIUS 1',
+      type : 'Organization',
+      description: 'Sebagai Sekretaris Bidang 9 yang mengurus mengenai teknologi, saya bersama 1 partner saya mengelola instagram OSIS/PPSK dan bertugas membuat poster untuk setiap event OSIS/PPSK. Adapun 2 program kerja baru yang terlaksana di tahun kepengurusan saya yaitu Workshop Inovasi Game dan FORXA',
+      images : [
+        '../slide-show/4_1.svg',
+        '../slide-show/4_2.svg',
+        '../slide-show/4_3.svg',
+
       ]
     }
   ];
@@ -83,9 +94,9 @@ const Achievement = () => {
   // console.log(achivements.image[2]);
   return (
     <>
-    <div name="achievement" className=' flex w-full h-fit py-16 px-4 items-center flex-col'> {/**/}
+    <div name="achievement" className=' flex w-full h-fit py-16 px-4 flex-col'> {/**/}
     <h1 className='text-2xl font-bold border-x-4 border-x-ungu p-1 px-4 mb-10 text-biru'>Experiences</h1>
-      <div className='w-full h-fit sm:inline-flex sm:space-x-2 sm:p-4 lg:block lg:space-x-0 lg:space-y-5  sm:overflow-x-scroll sm:snap-mandatory sm:snap-x lg:overflow-visible sm:self-center '>
+      <div className='w-full h-fit sm:inline-flex sm:space-x-2 sm:p-4 sm:overflow-x-scroll  sm:snap-mandatory  sm:self-center sm:snap-x lg:flex lg:flex-wrap lg:justify-center lg:space-x-0 lg:space-y-5 lg:overflow-visible'>
         {achievements.map((achievement, index) => (
           <CarouselItemIMG2 achievement={achievement} key={index} />
         ))}
