@@ -31,9 +31,9 @@ const Home = () => {
                     <div className="flex flex-col w-fit space-y-1 sm:w-full sm:items-center sm:p-10 lg:w-fit">
                         <h1 className="text-2xl font-bold text-putih">{"Let's Connect"}</h1>
                         <div className="flex sm:w-full space-x-3 justify-center lg:justify-start">
-                            <AiFillLinkedin size={35} onClick={redirectLinkedIn} className="cursor-pointer" color="#fef3c7"/>
-                            <AiTwotoneMail size={35} onClick={redirectEmail} className="cursor-pointer" color="#fef3c7" />
-                            <AiOutlineWhatsApp  size={35} onClick={redirectWA} className="cursor-pointer" color="#fef3c7"/>
+                            <AiFillLinkedin size={35} onClick={redirectLinkedIn} className="cursor-pointer hover:transition-transform hover:scale-125 duration-500 " color="#F7F9FF"/>
+                            <AiTwotoneMail size={35} onClick={redirectEmail} className="cursor-pointer hover:transition-transform hover:scale-125 duration-500 " color="#F7F9FF" />
+                            <AiOutlineWhatsApp  size={35} onClick={redirectWA} className="cursor-pointer hover:transition-transform hover:scale-125 duration-500 " color="#F7F9FF"/>
 
                             
                         </div>

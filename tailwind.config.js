@@ -30,6 +30,7 @@ export default {
         'biru': {
           light: '#A5BECC',
           light_50 : '#D1DEE5',
+          pastel : "#243A73",
           DEFAULT: '#001220',
         },
         'ungu': {

@@ -27,7 +27,7 @@ const Achievement = () => {
     {
       title : 'BNCC (Bina Nusantara Computer Club)',
       type : 'Organization',
-      description : 'Bergabung sebagai Aktivis, saya bertemu banyak tech enthusiast lainnnya. Disini saya belajar banyak mengenai cara kerja atau workflow sebuah organisasi dengan skala yang lebih besar, softskill, dan tentunya hardskill. Saya dipercaya untuk menjadi staff event dan juga MC pada beberapa event tahunan BNCC' ,
+      description : 'As an Activist, I met many other tech enthusiasts. Here I learned a lot about the workflow of an organization with a larger scale, soft skills, and of course hard skills. I was trusted to be a trainer, MC, and event staff at several BNCC annual events' ,
       images : [
         '../slide-show/1_1.svg',
         '../slide-show/1_2.svg',
@@ -38,7 +38,7 @@ const Achievement = () => {
     {
       title : 'Binus FYP (First Year Program) 2026',
       type : 'Event',
-      description : 'Sebagai Freshmen Leader, saya sangat dilatih untuk adaptif terhadap kondisi yang tidak menentu. Selama 7 hari saya berkolaborasi bersama 4 Freshmen Leader lainnya untuk mendampingi 60+ Freshmen dalam kelas ABN02. ',
+      description : 'As a New Student Leader, I was highly trained to adapt to ambiguous circumtances. For 7 days I collaborated with 4 other New Student Leaders to assist 60+ new students in ABN02 class. ',
       images : [
         '../slide-show/2_1.svg',
         '../slide-show/2_2.svg',
@@ -50,7 +50,7 @@ const Achievement = () => {
     {
       title : 'Team Promotion Binus University',
       type : 'Part Time',
-      description: 'Saya bekerja di bagian Content Creator yang bertugas untuk mempromosikan Binus University melalui content Instagram dan Tiktok dengan target market lulusan SMA yang seda mencari universitas. Selain itu saya juga dipercaya untuk membuat video promosi kolaborasi Binus X Rencanamu',
+      description: 'As a member of the Content Creator Team, it is my responsibility to create videos for Instagram and Tiktok that promote Binus University to prospective college students in the high school graduates target audience. Additionally, I received a request to make a marketing video for the collaboration between Binus and Rencanamu.',
       images : [
         '../slide-show/3_1.svg',
         '../slide-show/3_2.svg',
@@ -60,7 +60,7 @@ const Achievement = () => {
     {
       title : 'OSIS/PPSK SMA XAVERIUS 1',
       type : 'Organization',
-      description: 'Sebagai Sekretaris Bidang 9 yang mengurus mengenai teknologi, saya bersama 1 partner saya mengelola instagram OSIS/PPSK dan bertugas membuat poster untuk setiap event OSIS/PPSK. Adapun 2 program kerja baru yang terlaksana di tahun kepengurusan saya yaitu Workshop Inovasi Game dan FORXA',
+      description: 'As the Executive Secretary of Field 9 who takes care of technology, my partner and I manage the OSIS/PPSK Instagram and are in charge of making posters for every OSIS/PPSK event. The 2 new events that have been held in my year are the Workshop Inovasi Game and FORXA.',
       images : [
         '../slide-show/4_1.svg',
         '../slide-show/4_2.svg',
@@ -95,7 +95,10 @@ const Achievement = () => {
   return (
     <>
     <div name="achievement" className=' flex w-full h-fit py-16 px-4 flex-col'> {/**/}
-    <h1 className='text-2xl font-bold border-x-4 border-x-ungu p-1 px-4 mb-10 text-biru'>Experiences</h1>
+    <div className='my-5 flex flex-row sm:px-4 space-x-4 lg:px-36 justify-start'>
+        <div className='rounded-sm bg-ungu w-1'></div>
+        <h1 className='text-2xl font-bold text-biru'>Experience</h1>
+      </div>
       <div className='w-full h-fit sm:inline-flex sm:space-x-2 sm:p-4 sm:overflow-x-scroll  sm:snap-mandatory  sm:self-center sm:snap-x lg:flex lg:flex-wrap lg:justify-center lg:space-x-0 lg:space-y-5 lg:overflow-visible'>
         {achievements.map((achievement, index) => (
           <CarouselItemIMG2 achievement={achievement} key={index} />

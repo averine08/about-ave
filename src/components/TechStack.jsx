@@ -4,7 +4,10 @@ const TechStack = () => {
   return (
     
     <div name="techstack" className='flex w-full h-fit lg:p-20 sm:p-4 flex-col items-center'>
-        <h1 className='text-2xl font-bold border-x-4 border-x-ungu p-1 px-4 mb-10 text-biru'>Language & Tools I have used</h1>
+      <div className='mb-10 self-start flex flex-row sm:px-4 space-x-4 lg:px-20'>
+        <div className='rounded-sm bg-ungu w-1'></div>
+        <h1 className='text-2xl font-bold text-biru'>Language & Tools I have used</h1>
+      </div>
         <div className='flex flex-wrap justify-center p-6 md:w-[70%] sm:w-[90%] sm:p-4  bg-biru-light_50 items-center rounded-md'>
             <img src="../tech-stack/c.png" alt="C" className='md:max-w-[80px] sm:max-w-[60px] h-fit p-2'/>
             <img src="../tech-stack/java.png" alt="Java" className='md:max-w-[80px]  sm:max-w-[60px] h-fit p-2' />
