@@ -11,12 +11,17 @@ const Navbar = () => {
             color: '#BE5079',
             
         }
+        const activeStyleOpen = {
+            fontWeight: 'bold',
+            textDecoration : 'underline'
+            
+        }
         return(
             <>
-            <Link className={isOpen? "px-5  text-putih cursor-pointer hover:font-bold" : "px-5  text-biru  cursor-pointer hover:font-bold"} to="home"smooth={true} activeStyle={activeStyle} spy={true} onClick={isMobileNavOpen}>Home</Link>
-            <Link className={isOpen? "px-5  text-putih cursor-pointer hover:font-bold" : "px-5  text-biru  cursor-pointer hover:font-bold "} to="achievement" activeStyle={activeStyle} spy={true} smooth={true} onClick={isMobileNavOpen}>Achievement</Link>
-            <Link className={isOpen? "px-5  text-putih cursor-pointer hover:font-bold" : "px-5  text-biru  cursor-pointer hover:font-bold"} to="techstack" smooth={true} spy={true} activeStyle={activeStyle} onClick={isMobileNavOpen}>Techstack</Link>
-            <Link className={isOpen? "px-5  text-putih cursor-pointer hover:font-bold" : "px-5  text-biru  cursor-pointer hover:font-bold"} to="project" smooth={true}  spy={true} activeStyle={activeStyle} onClick={isMobileNavOpen}>Project</Link>
+            <Link className={isOpen? "px-5  text-putih cursor-pointer hover:font-bold" : "px-5  text-biru  cursor-pointer hover:font-bold"} to="home"smooth={true} activeStyle={isOpen? activeStyleOpen: activeStyle} spy={true} onClick={isMobileNavOpen}>Home</Link>
+            <Link className={isOpen? "px-5  text-putih cursor-pointer hover:font-bold" : "px-5  text-biru  cursor-pointer hover:font-bold "} to="achievement" activeStyle={isOpen? activeStyleOpen: activeStyle} spy={true} smooth={true} onClick={isMobileNavOpen}>Achievement</Link>
+            <Link className={isOpen? "px-5  text-putih cursor-pointer hover:font-bold" : "px-5  text-biru  cursor-pointer hover:font-bold"} to="techstack" smooth={true} spy={true} activeStyle={isOpen? activeStyleOpen: activeStyle} onClick={isMobileNavOpen}>Techstack</Link>
+            <Link className={isOpen? "px-5  text-putih cursor-pointer hover:font-bold" : "px-5  text-biru  cursor-pointer hover:font-bold"} to="project" smooth={true}  spy={true} activeStyle={isOpen? activeStyleOpen: activeStyle} onClick={isMobileNavOpen}>Project</Link>
             </>
         );
     };
