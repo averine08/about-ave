@@ -37,7 +37,7 @@ const Achievement = () => {
     },
     {
       title : 'Binus FYP (First Year Program) 2026',
-      type : 'Event',
+      type : 'Volunteer',
       description : 'As a New Student Leader, I was highly trained to adapt to ambiguous circumtances. For 7 days I collaborated with 4 other New Student Leaders to assist 60+ new students in ABN02 class. ',
       images : [
         '../slide-show/2_1.svg',
@@ -54,6 +54,7 @@ const Achievement = () => {
       images : [
         '../slide-show/3_1.svg',
         '../slide-show/3_2.svg',
+        '../slide-show/3_3.svg',
 
       ]
     },
@@ -65,6 +66,8 @@ const Achievement = () => {
         '../slide-show/4_1.svg',
         '../slide-show/4_2.svg',
         '../slide-show/4_3.svg',
+        '../slide-show/4_4.svg',
+        '../slide-show/4_5.svg',
 
       ]
     }
