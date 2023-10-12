@@ -26,7 +26,7 @@ const Home = () => {
                     <div className=" flex items-center sm:w-full sm:flex-wrap sm:justify-center sm:space-x-6 sm:space-y-2 sm:border-l-2 md:space-y-2 md:space-x-6 md:w-full  md:border-l-0 lg:w-2/3 lg:border-r-2 ">
                         <img src="../profile.svg" alt="profile" className="lg:max-h-36 p-1 sm:h-40"/>
                         <p className="leading-2 text-putih font-normal max-w-[400px]">
-                            {"Hi! I'm Averina Nurdin. Currently I'm studying at at Binus University majoring in Computer Science (5"}<sup className="position relative z-0">th</sup> {" Semester). I describe my self as a person who always eager to learn new things. I enjoy designing UI and content creating ... /I commited myself to pursue my carrer as web developer/ time coding is also challenging for me"} </p>
+                            {"Hi! I'm Averina Nurdin. A Computer Science Student at Binus University (5"}<sup className="position relative z-0">th</sup> {" Semester). I am eager to learn new things and love to understand the unexpected. Especially in web development, every scenario requires a unique problem-solving approach and every need has its own challenges. In this regard, I enjoy collaborating to create effective ideas in solving problems."} </p>
                     </div>
                     <div className="flex flex-col w-fit space-y-1 sm:w-full sm:items-center sm:p-10 lg:w-fit lg:items-start">
                         <h1 className="text-2xl font-bold text-putih">{"Let's Connect"}</h1>
