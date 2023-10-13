@@ -5,6 +5,7 @@ import Home from './components/Home'
 import TechStack from './components/TechStack'
 import Achievement from './components/Achievement'
 import Footer from './components/Footer'
+import Project from './components/Project'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Home/>
       <Achievement/>
       <TechStack/>
+      <Project/>
       <Footer/>
 
       {

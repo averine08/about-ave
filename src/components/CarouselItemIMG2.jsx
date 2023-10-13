@@ -14,6 +14,7 @@ const CarouselItemIMG2 = ({achievement}) => {
 
     const [currentIndex, setCurrentIndex] = useState(0)
     const [length, setLength] = useState(0)
+    
     useEffect(() => {
       setLength(achievement.images.length)
     },[achievement.images])

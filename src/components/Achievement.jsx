@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import CarouselItemIMG from './CarouselItemIMG';
+import React from 'react'
 import CarouselItemIMG2 from './CarouselItemIMG2';
 
 const Achievement = () => {
@@ -19,8 +18,6 @@ const Achievement = () => {
   //   // Clear the interval when the component unmounts
   //   return () => clearInterval(interval);
   // }, [achivements.length, currentIndex]);
-
-  const [currentIndex, setCurrentIndex] = useState(0);
 
 
   const achievements = [
@@ -73,31 +70,9 @@ const Achievement = () => {
     }
   ];
 
-  // const images_1 = [
-  //     '../src/assets/slide-show/1_1.jpg',
-  //     '../src/assets/slide-show/1_2.jpg',
-  //     '../src/assets/slide-show/1_3.jpg',
-  // ];
-
-  // const images_2 = [
-  //   '../src/assets/slide-show/1_1.jpg',
-  //   '../src/assets/slide-show/1_2.jpg',
-  //   '../src/assets/slide-show/1_3.jpg',
-  // ];
-
-  // const images_3 = [
-  //   '../src/assets/slide-show/1_1.jpg',
-  //   '../src/assets/slide-show/1_2.jpg',
-  //   '../src/assets/slide-show/1_3.jpg',
-  // ]
-
-
-  // console.log(achivements[0].images[0]);
-  // console.log(achivements.);
-  // console.log(achivements.image[2]);
   return (
     <>
-    <div name="achievement" className=' flex w-full h-fit py-16 px-4 flex-col'> {/**/}
+    <div name="achievement" className=' flex w-full h-fit py-16 px-4 flex-col'> 
     <div className='my-5 flex flex-row sm:px-4 space-x-4 lg:px-36 justify-start'>
         <div className='rounded-sm bg-ungu w-1'></div>
         <h1 className='text-2xl font-bold text-biru'>Experience</h1>

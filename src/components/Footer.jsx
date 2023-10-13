@@ -19,8 +19,6 @@ const redirectEmail = () => {
     window.open(mailTo, '_blank');
 }
 
-const background1 = `url('${footer2}')`
-
   return (
     <div className='relative overflow-hidden'>
         {/* <div style={{ backgroundImage: `url(${footer1})` }} className='w-screen h-fit bg-contain'>Hello</div> */}
