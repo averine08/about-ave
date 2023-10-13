@@ -2,8 +2,8 @@ import React from "react";
 import { AiOutlineWhatsApp, AiTwotoneMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 const Home = () => {
 
-    const redirectWA = () => {
-            window.open('https://wa.me/+6285268672218', '_blank');
+    const redirectGithub = () => {
+            window.open('https://github.com/averine08', '_blank');
     }
 
     const redirectLinkedIn = () => {
@@ -34,7 +34,7 @@ const Home = () => {
                             <AiFillLinkedin size={35} onClick={redirectLinkedIn} className="cursor-pointer hover:transition-transform hover:scale-125 duration-500 " color="#F7F9FF"/>
                             <AiTwotoneMail size={35} onClick={redirectEmail} className="cursor-pointer hover:transition-transform hover:scale-125 duration-500 " color="#F7F9FF" />
                             {/* <AiOutlineWhatsApp  size={35} onClick={redirectWA} className="cursor-pointer hover:transition-transform hover:scale-125 duration-500 " color="#F7F9FF"/> */}
-                            <AiFillGithub  size={35} onClick={redirectWA} className="cursor-pointer hover:transition-transform hover:scale-125 duration-500 " color="#F7F9FF"/>
+                            <AiFillGithub  size={35} onClick={redirectGithub} className="cursor-pointer hover:transition-transform hover:scale-125 duration-500 " color="#F7F9FF"/>
 
                             
                         </div>
