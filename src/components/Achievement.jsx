@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CarouselItemIMG2 from './CarouselItemIMG2';
-
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 const Achievement = () => {
 
   
@@ -18,7 +19,7 @@ const Achievement = () => {
   //   // Clear the interval when the component unmounts
   //   return () => clearInterval(interval);
   // }, [achivements.length, currentIndex]);
-
+  const [ activeIdx, setActiveIdx ] = useState(0);
 
   const achievements = [
     {
@@ -69,18 +70,55 @@ const Achievement = () => {
       ]
     }
   ];
+  
+  console.log(activeIdx);
+  const prevSlide = () => {
+    const isFirstSlide = activeIdx === 0;
+    const newIndex = isFirstSlide ? achievements.length - 1 : activeIdx - 1;
+    console.log(newIndex)
+    setActiveIdx(newIndex);
+  };
+
+  const nextSlide = () => {
+    const isLastSlide = activeIdx === achievements.length-1;
+    const newIndex = isLastSlide ? 0 : activeIdx + 1;
+    console.log(newIndex)
+    setActiveIdx(newIndex);
+  };
+
+  const navigateSlide = (toSlide) => {
+    return setActiveIdx(toSlide);
+  }
 
   return (
     <>
     <div name="achievement" className=' flex w-full h-fit py-16 px-4 flex-col'> 
-    <div className='my-5 flex flex-row sm:px-4 space-x-4 lg:px-36 justify-start'>
-        <div className='rounded-sm bg-ungu w-1'></div>
-        <h1 className='text-2xl font-bold text-biru'>Experience</h1>
+      <div className='my-5 flex flex-row sm:px-4 space-x-4 lg:px-36 justify-start'>
+          <div className='rounded-sm bg-ungu w-1'></div>
+          <h1 className='text-2xl font-bold text-biru'>Experience</h1>
       </div>
-      <div className='w-full h-fit sm:inline-flex sm:space-x-2 sm:p-4 sm:overflow-x-scroll  sm:snap-mandatory  sm:self-center sm:snap-x lg:flex lg:flex-wrap lg:justify-center lg:space-x-0 lg:space-y-5 lg:overflow-visible'>
+      <div className='w-full h-fit sm:inline-flex sm:space-x-2 sm:p-4 sm:overflow-x-scroll  sm:snap-mandatory  sm:self-center sm:snap-x lg:hidden lg:flex-wrap lg:justify-center lg:space-x-0 lg:space-y-5 lg:overflow-visible'>
         {achievements.map((achievement, index) => (
           <CarouselItemIMG2 achievement={achievement} key={index} />
         ))}
+      </div>
+      {/* Ini buat yang lg ke atas */}
+      <div className=' group flex items-center justify-center sm:hidden lg:flex lg:h-full lg:gap-2 '>
+        <div className='flex opacity-0 group-hover:opacity-100 duration-100 h-[500px] w-10 items-center justify-center rounded-md ' onClick={prevSlide}>
+          <BsChevronCompactLeft color='#001220' size={50}/>
+        </div>
+          <CarouselItemIMG2 achievement={achievements[activeIdx]}/>
+        <div className='flex opacity-0 group-hover:opacity-100 duration-100  h-[500px] w-10 items-center justify-center rounded-md ' onClick={nextSlide}>
+          <BsChevronCompactRight color='#001220' size={50}/>
+        </div>
+      </div>
+      <div className='flex justify-center p-2'>
+        <ul className='flex'>
+          <li onClick={() => navigateSlide(0)} className='w-3 h-3 m-2 rounded-full bg-ungu' ></li>
+          <li onClick={() => navigateSlide(1)} className='w-3 h-3 m-2 rounded-full bg-ungu'></li>
+          <li onClick={() => navigateSlide(2)} className='w-3 h-3 m-2 rounded-full bg-ungu' ></li>
+          <li onClick={() => navigateSlide(3)} className='w-3 h-3 m-2 rounded-full bg-ungu'></li>
+        </ul>
       </div>
     </div>
 
