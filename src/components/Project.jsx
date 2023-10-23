@@ -22,7 +22,7 @@ const Project = () => {
       img : '../projects/AdexLegend.svg',
       brief : 'Game Profile',
       description: 'ADEX LEGEND (Team) website redesigned from the desktop game website, Apex Legends. The website contains agents in games, maps and the latest news about Adex Legend. A team project that is made for Human Computer Interaction Course',
-      github : 'asdsad',
+      github : 'https://github.com/averine08/AdexLegends.git',
       techstacks: ['FE', 'UI Designer', 'HTML', 'CSS', 'JS'],
       figma : 'https://www.figma.com/file/XLuo21g3Tj17d8HU6Gkm1M/HCIProject_ADEXLegends-(FINAL)?type=design&node-id=0%3A1&mode=design&t=CWR2EWyN0gI1CAVT-1',
   },
