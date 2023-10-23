@@ -46,7 +46,7 @@ const Project = () => {
   {
     title : 'Hotel Receptionist System',
     img : '../projects/HotelReceptionist.svg',
-    brief : 'Mobile Apps for Recycling',
+    brief : 'Java Project',
     description: 'Hotel Receptionist System (Team) is a check-in and check-out system using Java. There are 2 versions of the program, using the console (CLI) and the GUI. To enhance the User Experience, data display is equipped with sorting and filter features. Is made for completing Object Oriented Programming  Course',
     github : 'https://github.com/averine08/HotelReceptionistSystem.git',
     techstacks: ['BE','Java', 'Java Swing'],
