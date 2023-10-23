@@ -37,7 +37,7 @@ const Project = () => {
   {
     title : 'Binus Recycle Apps',
     img : '../projects/BinusRecycleApps.svg',
-    brief : 'Mobile Apps for Recycling',
+    brief : 'Apps for Recycling',
     description: 'Binus Recycle Apps (Team) is a mobile application created out of our concern for the unmanaged waste in the Binus Kemanggisan area. To raise Binusian \'s awareness, through Binus Recycle Apps, recyclable waste such as paper, cardboard, glass bottles, and plastic bottles can be exchanged into Community Service Hours',
     github : 'https://github.com/kennethfilberts/binus-recycle-app.git',
     techstacks: ['FE','React Native', 'TS', 'SQL', 'Tensorflow'],

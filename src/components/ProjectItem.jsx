@@ -2,8 +2,7 @@
 /* eslint-disable react/jsx-key */
 import React, { useState } from "react";
 import { SiFigma} from "react-icons/si";
-import {BiSolidDetail} from "react-icons/bi"
-import { AiFillGithub, AiFillAlert, AiFillYoutube } from 'react-icons/ai';
+import { AiFillGithub, AiFillYoutube } from 'react-icons/ai';
 
 const ProjectItem = ({project, key}) => {
     // console.log(project);
@@ -18,7 +17,7 @@ const ProjectItem = ({project, key}) => {
     }
   return (
     <>
-        <div className=" relative lg:w-[31%] md:w-[40%] rounded-md border-2 border-spacing-10 border-biru-pastel min-h-[450px] overflow-hidden sm:w-full"
+        <div className=" relative lg:w-[31%] rounded-md border-2 border-spacing-10 border-biru-pastel lg:min-h-[450px] sm:min-h-[400px] overflow-hidden sm:w-full"
             onClick={() => ChangeDetailStatus()}>
             
                 <div
@@ -26,13 +25,13 @@ const ProjectItem = ({project, key}) => {
                 className="w-full min-h-[70%] bg-cover bg-no-repeat bg-center bg-clip-content duration-300 hover:scale-110 "
                 ></div>
             
-            <div className="flex p-4 gap-2 flex-col relative justify-center">
+            <div className="flex p-4  gap-2 flex-col relative justify-center">
             <div className="flex justify-between items-start">
                 <div className="flex flex-col gap-0">
-                    <h2 className="font-bold text-xl text-biru-pastel w-fit">
+                    <h2 className="font-bold text-xl text-biru-pastel w-fit sm:text-base">
                         {project.title}
                     </h2>
-                    <p className="text-sm">{project.brief}</p>
+                    <p className="text-sm sm:text-xs">{project.brief}</p>
                 </div>
                 <div className="flex gap-2 ">
                     {project.youtube? (
@@ -74,9 +73,9 @@ const ProjectItem = ({project, key}) => {
             </div>
             <div
             className={ 
-                ` transition-transform ease-in-out rounded-b-md duration-300 h-[70%] w-full flex relative z-20 py-1 px-4 backdrop-blur-md backdrop-brightness-50 bg-ungu/50 top-10
+                ` transition-transform ease-in-out rounded-b-md duration-300 h-[100%] sm:h-full w-full flex relative z-20 py-1 px-4 backdrop-blur-md backdrop-brightness-50 bg-ungu/50   sm:top-20
                 ${detailsIsOpen
-                ? " translate-y-[-70%] duration-500 "
+                ? "  md:translate-y-[-60%] duration-500 "
                 : "translate-y-[0%]  "}
             `}
             >
