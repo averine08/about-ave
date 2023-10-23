@@ -1,6 +1,6 @@
 import React from 'react'
 import footer1 from  '/wave_footer1.svg'
-import footer2 from  '/wave_footer2_2.svg'
+import footer2 from  '/wave_footer2.svg'
 import { AiFillLinkedin, AiTwotoneMail, AiOutlineWhatsApp } from "react-icons/ai"
 
 const Footer = () => {

@@ -35,6 +35,7 @@ export default {
         },
         'ungu': {
           DEFAULT: '#7C3E66',
+          bright : '#BE5079',
         },
         'putih': {
           DEFAULT: '#F7F9FF',
@@ -52,13 +53,11 @@ export default {
   },
   plugins: [],
   safelist : [
-    {
-      pattern : 
-        /(bg|text|border)-(biru|ungu|putih)/,
-    },
-    {
-      pattern: /(bg|text|border)-(biru)-(light|light_50|DEFAULT)/,
-    },
+    
+      /(bg|text|border)-(biru|ungu|putih)/,
+      /(bg|text|border)-(biru)-(light|light_50|pastel|DEFAULT)/,
+      /(bg|text|border)-(ungu)-(bright|DEFAULT)/,
+      
 
   ],
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineWhatsApp, AiTwotoneMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { AiTwotoneMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 const Home = () => {
 
     const redirectGithub = () => {
