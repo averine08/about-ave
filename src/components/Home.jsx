@@ -22,7 +22,7 @@ const Home = () => {
         <div name="home" className="bg-biru h-screen max-w-full pt-16 block sm:h-fit ">
             <img src="../wave-nav.svg" alt=""  className="w-full"/>
             <div className=" h-full lg:px-20 lg:py-10 rounded-md flex flex-col sm:p-10">
-                <h1 className="pb-10 font-bold lg:text-5xl lg:self-center  max-w-[1000px] text-putih sm:text-4xl">Web Developer Enthusiast who <span className="bg-gradient-to-r from-cyan-600 to-blue-500 text-transparent bg-clip-text">fast adapting</span> and always ready to <span className="bg-gradient-to-r from-cyan-600 to-blue-500 text-transparent bg-clip-text">explore</span> new techstack</h1>
+                <h1 className="pb-10 font-bold lg:text-5xl lg:self-center  max-w-[1000px] text-putih sm:text-4xl">Web Developement Enthusiast who <span className="bg-gradient-to-r from-cyan-600 to-blue-500 text-transparent bg-clip-text">fast adapting</span> and always ready to <span className="bg-gradient-to-r from-cyan-600 to-blue-500 text-transparent bg-clip-text">explore</span> new techstack</h1>
                 <div className="flex flex-row flex-wrap w-full max-w-[1000px] h-fit py-5 self-center "> 
                     <div className=" flex items-center sm:w-full sm:flex-wrap sm:justify-center sm:space-x-6 sm:space-y-2 sm:border-l-2 md:space-y-2 md:space-x-6 md:w-full  md:border-l-0 lg:w-2/3 lg:border-r-2 ">
                         <img src="../profile.svg" alt="profile" className="lg:max-h-36 p-1 sm:h-40"/>
