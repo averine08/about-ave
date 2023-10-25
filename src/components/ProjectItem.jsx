@@ -73,7 +73,7 @@ const ProjectItem = ({project, key}) => {
             </div>
             <div
             className={ 
-                ` transition-transform ease-in-out rounded-b-md   h-[100%] sm:h-fit min-h-[30%] w-full flex align-center absolute bottom-0 pt-3 pb-6 px-4 backdrop-blur-md backdrop-brightness-50 bg-ungu/50
+                ` transition-transform ease-in-out rounded-b-md h-[100%] sm:h-fit  w-full flex align-center absolute bottom-0 pt-3 pb-6 px-4 backdrop-blur-md backdrop-brightness-50 bg-ungu/50
                 ${detailsIsOpen
                     ? "  translate-y-[0%] duration-500 "
                     : "translate-y-[100%] duration-300"}
