@@ -28,10 +28,10 @@ const ProjectItem = ({project, key}) => {
             <div className="flex p-4  gap-2 flex-col relative justify-center">
             <div className="flex justify-between items-start">
                 <div className="flex flex-col gap-0">
-                    <h2 className="font-bold text-xl text-biru-pastel w-fit sm:text-base">
+                    <h2 className="font-bold  text-biru-pastel w-fit sm:text-md lg:text-[1.2rem] leading-none ">
                         {project.title}
                     </h2>
-                    <p className="text-sm sm:text-xs">{project.brief}</p>
+                    <p className="text-sm sm:text-sm text-black/50">{project.brief}</p>
                 </div>
                 <div className="flex gap-2 ">
                     {project.youtube? (
@@ -62,8 +62,8 @@ const ProjectItem = ({project, key}) => {
             </div>
             <div className="flex gap-1 flex-wrap">
                 {project.techstacks.map ((tech) => (
-                <a className={`px-3 py-1 bg-biru-light text-biru-pastel text-xs rounded-lg
-                ${tech == 'FE' || tech =='UI Designer' || tech =='BE'? 'bg-ungu/50 text-ungu': 'bg-biru-light' }`}>
+                <a className={`px-3 py-1 bg-biru-light text-biru-pastel text-[0.8rem] rounded-lg
+                ${tech == 'FE' || tech =='UI Designer' || tech =='BE'? 'bg-ungu/30 text-ungu': 'bg-biru-light' }`}>
                 {tech}
                 </a>
                 ))}

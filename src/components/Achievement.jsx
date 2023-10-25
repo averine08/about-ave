@@ -97,6 +97,7 @@ const Achievement = () => {
           <div className='rounded-sm bg-ungu w-1'></div>
           <h1 className='text-2xl font-bold text-biru'>Experience</h1>
       </div>
+      <p className='sm:pb-8 lg:hidden pb-10 sm:px-4 lg:px-36 relative -top-4 text-slate-500'>//Scroll to left for more</p>
       {/* <div className='w-full h-fit sm:inline-flex sm:space-x-2 sm:p-4 sm:overflow-x-scroll  sm:snap-mandatory  sm:self-center sm:snap-x lg:hidden lg:flex-wrap lg:justify-center lg:space-x-0 lg:space-y-5 lg:overflow-visible'>
         {achievements.map((achievement, index) => (
           <CarouselItemIMG2 achievement={achievement} key={index} />

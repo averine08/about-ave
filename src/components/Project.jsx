@@ -4,9 +4,9 @@ import ProjectItem from './ProjectItem';
 
 
 const Project = () => {
-    const seeProject = () => {
-        window.open('https://drive.google.com/file/d/1GCxQEpoTRMi1CJjMpEbqVuY_YJPalarT/view?usp=sharing', '_blank');
-    }
+    // const seeProject = () => {
+    //     window.open('https://drive.google.com/file/d/1GCxQEpoTRMi1CJjMpEbqVuY_YJPalarT/view?usp=sharing', '_blank');
+    // }
     const projects= [
       {
         title : 'All About Averina',
@@ -60,7 +60,7 @@ const Project = () => {
             <div className='rounded-sm bg-ungu w-1'></div>
             <h1 className='text-2xl font-bold text-biru'>Projects</h1>
         </div>
-        <p className='pb-8 sm:px-4 lg:px-36 relative -top-5 text-slate-500'>//Click cards for more detail</p>
+        <p className='pb-4 sm:px-4 lg:px-36 relative -top-5 text-slate-500'>//Click cards for more detail</p>
         <div className='flex w-[80%]  self-center' >
           <div className='flex justify-center w-full gap-5 flex-wrap' >
             {projects.map((project, key) => (
