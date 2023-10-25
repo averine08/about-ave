@@ -38,7 +38,7 @@ const Home = () => {
                             <AiFillGithub  size={35} onClick={redirectGithub} className="cursor-pointer hover:transition-transform hover:scale-125 duration-500 " color="#F7F9FF"/> 
                         </div>
                     
-                        <a href="https://drive.google.com/file/d/1drG9mtheSQiJWaZrvS0VvxdA9QP88Xzk/view?usp=sharing" target="_blank" className="bg-ungu-bright text-putih px-4 py-2 rounded-md lg:mt-5 sm:mt-5 hover:bg-ungu duration-200 hover:-translate-y-1 " rel="noreferrer noopenner"
+                        <a href="https://drive.google.com/file/d/1drG9mtheSQiJWaZrvS0VvxdA9QP88Xzk/view?usp=sharing" target="_blank" className="bg-ungu-bright text-putih lg:px-4 lg:py-2 sm:px-6 sm:py-4 rounded-md lg:mt-5 sm:mt-5 hover:bg-ungu duration-200 hover:-translate-y-1 " rel="noreferrer noopenner"
                         > 
                             <div className="flex gap-3 justify-center items-center">
                                 Resume 

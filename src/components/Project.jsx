@@ -61,13 +61,13 @@ const Project = () => {
             <h1 className='text-2xl font-bold text-biru'>Projects</h1>
         </div>
         <p className='pb-4 sm:px-4 lg:px-36 relative -top-5 text-slate-500'>//Click cards for more detail</p>
-        <div className='flex w-[80%]  self-center' >
-          <div className='flex justify-center w-full gap-5 flex-wrap' >
+          <div className='flex justify-center w-[85%] self-center gap-5 flex-wrap' >
             {projects.map((project, key) => (
               <ProjectItem project={project} key={key}/>
             )
             )}
-          </div>
+        {/* <div className='flex w-[80%]  self-center' >
+          </div> */}
         </div>
     </div>
   )

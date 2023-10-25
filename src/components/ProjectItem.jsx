@@ -17,7 +17,7 @@ const ProjectItem = ({project, key}) => {
     }
   return (
     <>
-        <div className=" relative lg:w-[31%] rounded-md border-2 border-spacing-10 border-biru-pastel lg:min-h-[450px] sm:min-h-[400px] overflow-hidden sm:w-full"
+        <div className=" flex flex-col relative lg:w-[31%] rounded-md border-2 border-spacing-10 border-biru-pastel lg:min-h-[450px] sm:min-h-[400px] overflow-hidden sm:w-full"
             onClick={() => ChangeDetailStatus()}>
             
                 <div
@@ -73,13 +73,12 @@ const ProjectItem = ({project, key}) => {
             </div>
             <div
             className={ 
-                ` transition-transform ease-in-out rounded-b-md duration-300 h-[100%] sm:h-full w-full flex relative z-20 py-1 px-4 backdrop-blur-md backdrop-brightness-50 bg-ungu/50  sm:top-20
+                ` transition-transform ease-in-out rounded-b-md   h-[100%] sm:h-fit min-h-[30%] w-full flex align-center absolute bottom-0 pt-3 pb-6 px-4 backdrop-blur-md backdrop-brightness-50 bg-ungu/50
                 ${detailsIsOpen
-                ? "  translate-y-[-60%] duration-500 "
-                : "translate-y-[0%]  "}
-            `}
-            >
-            <p className={`text-sm text-putih font-normal duration-500 opacity-0  ${detailsIsOpen? 'opacity-100': 'opacity-0'}`}>{project.description}</p>
+                    ? "  translate-y-[0%] duration-500 "
+                    : "translate-y-[100%] duration-300"}
+            `}>
+            <p className={`text-sm text-putih font-normal duration-500 opacity-0  ${detailsIsOpen? 'opacity-100 delay-700': 'opacity-0'}`}>{project.description}</p>
             </div>
         </div>
     </>
