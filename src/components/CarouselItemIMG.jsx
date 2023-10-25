@@ -45,9 +45,9 @@ const CarouselItemIMG = ({achievement, key, activeIdx}) => {
           </div>
       </div>
       <div className='sm:w-[85%]  md:w-[80%] lg:w-[70%]  h-fit bg-transparent font-normal pt-5'>
-        <p className='p-1 px-2 bg-biru-light/100 text-xs font-semibold text-putih w-fit rounded-md'>{achievement.type}</p>
+        <p className='p-1 px-2 bg-biru-pastel/50 text-xs font-semibold text-putih w-fit rounded-md'>{achievement.type}</p>
         <h1 className='text-biru-pastel font-bold text-xl '>{achievement.title}</h1>
-        <p>{achievement.description}</p>
+        <p className='text-md'>{achievement.description}</p>
       </div>
     </div>
     // </div>

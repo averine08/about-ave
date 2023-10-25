@@ -17,12 +17,12 @@ const ProjectItem = ({project, key}) => {
     }
   return (
     <>
-        <div className=" flex flex-col relative lg:w-[31%] rounded-md border-2 border-spacing-10 border-biru-pastel lg:min-h-[450px] sm:min-h-[400px] overflow-hidden sm:w-full"
+        <div className=" flex flex-col relative  rounded-md border-2 border-spacing-10 border-biru-pastel lg:min-h-[450px] sm:min-h-[400px] overflow-hidden sm:w-full md:w-[48%] lg:w-[31%]"
             onClick={() => ChangeDetailStatus()}>
             
                 <div
                 style={{ backgroundImage: `url(${project.img})` }}
-                className="w-full min-h-[70%] bg-cover bg-no-repeat bg-center bg-clip-content duration-300 hover:scale-110 "
+                className="w-full min-h-[70%] bg-cover bg-no-repeat bg-center bg-clip-content duration-300 transform scale-100 lg:hover:scale-110 "
                 ></div>
             
             <div className="flex p-4  gap-2 flex-col relative justify-center">
@@ -73,12 +73,13 @@ const ProjectItem = ({project, key}) => {
             </div>
             <div
             className={ 
-                ` transition-transform ease-in-out rounded-b-md h-[100%] sm:h-fit  w-full flex align-center absolute bottom-0 pt-3 pb-6 px-4 backdrop-blur-md backdrop-brightness-50 bg-ungu/50
+                ` transition-transform ease-in-out rounded-b-md sm:min-h-[30%] lg:h-fit  w-full flex flex-col align-center absolute bottom-0 pt-3 pb-6 px-4 backdrop-blur-md backdrop-brightness-50 bg-ungu/50
                 ${detailsIsOpen
                     ? "  translate-y-[0%] duration-500 "
                     : "translate-y-[100%] duration-300"}
             `}>
-            <p className={`text-sm text-putih font-normal duration-500 opacity-0  ${detailsIsOpen? 'opacity-100 delay-700': 'opacity-0'}`}>{project.description}</p>
+            <h2 className={`text-lg text-putih font-bold duration-500 opacity-0  ${detailsIsOpen? 'opacity-100 delay-700': 'opacity-0'}`}>{project.title}</h2>
+            <p className={`text-md text-putih font-normal duration-500 opacity-0  ${detailsIsOpen? 'opacity-100 delay-700': 'opacity-0'}`}>{project.description}</p>
             </div>
         </div>
     </>
