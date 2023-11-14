@@ -26,6 +26,7 @@ const TechStack = () => {
             <img src="../tech-stack/ClickUp.webp" alt="Python" className='md:max-w-[80px] sm:max-w-[60px] h-fit  p-2 rounded-full' title='Click Up'/>
             <img src="../tech-stack/mysql.png" alt="Python" className='md:max-w-[80px] sm:max-w-[60px] h-fit p-2 ' title='MySQL'/>
             <img src="../tech-stack/sql-server.png" alt="Python" className='md:max-w-[80px] sm:max-w-[60px] h-fit p-2 'title='Ms. SQL' />
+            <img src="../tech-stack/Laravel.png" className='md:max-w-[80px] sm:max-w-[60px] h-fit p-2 'title='Ms. SQL' />
             <img src="../tech-stack/postman.png" alt="Python" className='md:max-w-[80px] sm:max-w-[60px] h-fit p-2 ' title='Postman'/>
             <img src="../tech-stack/tailwind.jpg" alt="Python" className='md:max-w-[80px] sm:max-w-[60px] h-fit p-2 rounded-full' title='Tailwind' />
             {/* <img src="../tech-stack/Tensorflow_logo.svg.png" alt="Python" className='md:max-w-[80px] sm:max-w-[60px] h-fit p-2 ' /> */}

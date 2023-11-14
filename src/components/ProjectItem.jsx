@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { SiFigma} from "react-icons/si";
 import { AiFillGithub, AiFillYoutube } from 'react-icons/ai';
+import { RxOpenInNewWindow } from "react-icons/rx";
 
 const ProjectItem = ({project, key}) => {
     // console.log(project);
@@ -56,6 +57,14 @@ const ProjectItem = ({project, key}) => {
                         
                         >
                         <AiFillGithub size={20} onClick={()=> navigateLink(project.github)} />
+                        </a>
+                    ) : null}
+                    {project.drive ? (
+                        <a
+                        className="p-2 rounded-full bg-ungu-bright text-putih cursor-pointer duration-200 hover:bg-ungu"
+                        
+                        >
+                        <RxOpenInNewWindow size={20} onClick={()=> navigateLink(project.drive)} />
                         </a>
                     ) : null}
                 </div>

@@ -52,6 +52,15 @@ const Project = () => {
     techstacks: ['BE','Java', 'Java Swing'],
     
   },
+  {
+    title : 'Using Machine Learning for the Prediction of Diabetes with Emphasis on Blood Content',
+    img : '../projects/ResearchPaper.png',
+    brief : 'Research Paper',
+    description: 'is a research which aim to find the most accurate machine learning model for Diabetes Prediction. We are using the LMCH Diabetes Database, also utilizing Pandas and Sklearn library for data preprocessing and model trainning',
+    techstacks: [],
+    drive: 'https://drive.google.com/drive/folders/1JiP6js0RyFNAP-hD1lf963rp0xXQYsdw?usp=sharing'
+    
+  },
   ];
 
   return (
