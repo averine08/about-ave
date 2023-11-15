@@ -9,6 +9,13 @@ const Project = () => {
     // }
     const projects= [
       {
+        title : 'Kzation',
+        img : '../projects/Kztation.svg',
+        brief : 'Kpop Stuff Store',
+        description: 'KpopZtation (Team) is a website that sell Kpop Stuff like album and lightstick. User should login before buying items. User can play the preview of each song in a album ',
+        techstacks: ['UI Designer','FE', 'BE','Laravel', 'MySQL', 'Tailwind'],
+      },
+    {
         title : 'All About Averina',
         img : '../projects/AllAboutAve.svg',
         brief : 'Portofolio',
@@ -23,7 +30,7 @@ const Project = () => {
       brief : 'Game Profile',
       description: 'ADEX LEGEND (Team) website redesigned from the desktop game website, Apex Legends. The website contains agents in games, maps and the latest news about Adex Legend. A team project that is made for Human Computer Interaction Course',
       github : 'https://github.com/averine08/AdexLegends.git',
-      techstacks: ['FE', 'UI Designer', 'HTML', 'CSS', 'JS'],
+      techstacks: ['FE', 'UI Designer', 'HTML', 'CSS', 'Javascript'],
       figma : 'https://www.figma.com/file/XLuo21g3Tj17d8HU6Gkm1M/HCIProject_ADEXLegends-(FINAL)?type=design&node-id=0%3A1&mode=design&t=CWR2EWyN0gI1CAVT-1',
   },
   {
@@ -32,15 +39,7 @@ const Project = () => {
     brief : 'Kpop Stuff Store',
     description: 'KpopZtation (Team) is a website for Kpopers so they can buy Kpop album by The artist. User can access the website with one of these role : admins, customer, and guest. To enhance user experience, we made cart feature. From this project i learnt a lot about ASP.Net environment and MVC model',
     github : 'https://github.com/averine08/KpopZtations.git',
-    techstacks: ['FE','ASP.Net C#', 'SQL', 'CSS'],
-  },
-  {
-    title : 'Kzation',
-    img : '../projects/KpopZtation.svg',
-    brief : 'Kpop Stuff Store',
-    description: 'KpopZtation (Team) is a website for Kpopers so they can buy Kpop album by The artist. User can access the website with one of these role : admins, customer, and guest. To enhance user experience, we made cart feature. From this project i learnt a lot about ASP.Net environment and MVC model',
-    github : 'https://github.com/averine08/KpopZtations.git',
-    techstacks: ['FE','ASP.Net C#', 'SQL', 'CSS'],
+    techstacks: ['FE', 'BE','ASP.Net C#', 'SQL', 'CSS'],
   },
   {
     title : 'Binus Recycle Apps',
@@ -48,7 +47,7 @@ const Project = () => {
     brief : 'Apps for Recycling',
     description: 'Binus Recycle Apps (Team) is a mobile application created out of our concern for the unmanaged waste in the Binus Kemanggisan area. To raise Binusian \'s awareness, through Binus Recycle Apps, recyclable waste such as paper, cardboard, glass bottles, and plastic bottles can be exchanged into Community Service Hours',
     github : 'https://github.com/kennethfilberts/binus-recycle-app.git',
-    techstacks: ['FE','React Native', 'TS', 'SQL', 'Tensorflow'],
+    techstacks: ['FE','React Native', 'Typescript', 'SQL', 'Tensorflow'],
     youtube: 'https://youtu.be/QEUJW-dWmQI?si=ZHaT6mLapam29C9z',
   },
   {
@@ -77,7 +76,7 @@ const Project = () => {
             <div className='rounded-sm bg-ungu w-1'></div>
             <h1 className='text-2xl font-bold text-biru'>Projects</h1>
         </div>
-        <p className='pb-4 sm:px-4 lg:px-36 relative -top-5 text-slate-500'>//Click cards for more detail</p>
+        <p className='pb-4 sm:px-4 lg:px-36 relative -top-5 text-slate-500'>//Hover or click cards for more detail</p>
           <div className='flex justify-center w-[85%] self-center gap-5 flex-wrap' >
             {projects.map((project, key) => (
               <ProjectItem project={project} key={key}/>

@@ -9,9 +9,18 @@ const ProjectItem = ({project, key}) => {
     // console.log(project);
     const [detailsIsOpen, setDetailsIsOpen] = useState(false);
 
+    const ChangeDetailStatusTrue = () => {
+        setDetailsIsOpen(true);
+    };
+
+    const ChangeDetailStatusFalse = () => {
+        setDetailsIsOpen(false);
+    };
+
     const ChangeDetailStatus = () => {
         setDetailsIsOpen(!detailsIsOpen);
     };
+
     const navigateLink = (link) =>{
         // const link = project[type];
         window.open(link , "_blank");
@@ -19,7 +28,7 @@ const ProjectItem = ({project, key}) => {
   return (
     <>
         <div className=" flex flex-col relative  rounded-md border-2 border-spacing-10 border-biru-pastel lg:min-h-[450px] sm:min-h-[400px] overflow-hidden sm:w-full md:w-[48%] lg:w-[31%]"
-            onClick={() => ChangeDetailStatus()}>
+            onMouseOver={() => ChangeDetailStatusTrue()} onMouseLeave={()=>ChangeDetailStatusFalse()} onClick={()=> ChangeDetailStatus()}>
             
                 <div
                 style={{ backgroundImage: `url(${project.img})` }}
