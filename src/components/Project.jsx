@@ -35,6 +35,14 @@ const Project = () => {
     techstacks: ['FE','ASP.Net C#', 'SQL', 'CSS'],
   },
   {
+    title : 'Kzation',
+    img : '../projects/KpopZtation.svg',
+    brief : 'Kpop Stuff Store',
+    description: 'KpopZtation (Team) is a website for Kpopers so they can buy Kpop album by The artist. User can access the website with one of these role : admins, customer, and guest. To enhance user experience, we made cart feature. From this project i learnt a lot about ASP.Net environment and MVC model',
+    github : 'https://github.com/averine08/KpopZtations.git',
+    techstacks: ['FE','ASP.Net C#', 'SQL', 'CSS'],
+  },
+  {
     title : 'Binus Recycle Apps',
     img : '../projects/BinusRecycleApps.svg',
     brief : 'Apps for Recycling',

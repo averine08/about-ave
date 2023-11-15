@@ -24,10 +24,10 @@ const Home = () => {
             <div className=" h-full lg:px-20 lg:py-10 rounded-md flex flex-col sm:p-10">
                 <h1 className="pb-10 font-bold lg:text-5xl lg:self-center  max-w-[1000px] text-putih sm:text-4xl">Web Developement Enthusiast who <span className="bg-gradient-to-r from-cyan-600 to-blue-500 text-transparent bg-clip-text">fast adapting</span> and always ready to <span className="bg-gradient-to-r from-cyan-600 to-blue-500 text-transparent bg-clip-text">explore</span> new techstack</h1>
                 <div className="flex flex-row flex-wrap w-full max-w-[1000px] h-fit py-5 self-center "> 
-                    <div className=" flex items-center sm:w-full sm:flex-wrap sm:justify-center sm:space-x-6 sm:space-y-2 sm:border-l-2 md:space-y-2 md:space-x-6 md:w-full  md:border-l-0 lg:w-2/3 lg:border-r-2 ">
+                    <div className=" flex items-center sm:w-full sm:flex-wrap sm:justify-center sm:space-x-6 sm:space-y-2 sm:border-l-2 md:space-y-2 md:space-x-6 md:w-full  md:border-l-0 lg:w-[75%] lg:border-r-2">
                         <img src="../profile.svg" alt="profile" className="lg:max-h-36 p-1 sm:h-40"/>
-                        <p className="leading-2 text-putih font-normal max-w-[400px]">
-                            {"Hi! I'm Averina Nurdin. A Computer Science Student at Binus University (5"}<sup className="position relative z-0">th</sup> {" Semester). I am eager to learn new things and love to understand the unexpected. Especially in web development, every scenario requires a unique problem-solving approach and every need has its own challenges. In this regard, I enjoy collaborating to create effective ideas in solving problems."} </p>
+                        <p className=" text-putih font-normal max-w-[500px]">
+                            Hi! I am Averina Nurdin, a computer science student specializing in software engineering who is passionate in application development. High curiosity and a strong sense of learning have led me to various experiences that have shaped me both in hard skills (web development) and soft skills such as communication and teamwork. I am a team initiator who thrives in a collaborative team environment where problem-solving is a shared mission. I value continuous learning and excited to sharpen my skills through real-world cases. </p>
                     </div>
                     <div className="flex flex-col w-fit  sm:w-full sm:items-center sm:p-10 lg:w-fit lg:items-start">
                         <h1 className="text-2xl font-bold text-putih">{"Let's Connect"}</h1>
